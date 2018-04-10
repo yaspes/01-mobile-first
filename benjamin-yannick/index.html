@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>Lab 1</title>
-  <!-- TODO: Add a meta tag to properly set the viewport and initial scale -->
+  <!-- TODO(COMPLETED): Add a meta tag to properly set the viewport and initial scale -->
   <meta name="viewport" content="width-device, initial-scale=1">
 
-  <!-- TODO: Add a link to a normalize.css file, which should be in your vendor/styles/ directory -->
-  <link rel="stylesheet" href="styles/normalize.css"/>
-  <link rel="stylesheet" href="styles/icons.css"/>
-  <link rel="stylesheet" href="styles/base.css"/>
-  <link rel="stylesheet" href="styles/layout.css"/>
-  <link rel="stylesheet" href="styles/modules.css"/>
+  <!-- TODO(COMPLETED): Add a link to a normalize.css file, which should be in your vendor/styles/ directory -->
+  <link rel="stylesheet" href="vendor/styles/normalize.css"/>
+  <link rel="stylesheet" href="vendor/styles/icons.css"/>
+  <link rel="stylesheet" href="vendor/styles/base.css"/>
+  <link rel="stylesheet" href="vendor/styles/layout.css"/>
+  <link rel="stylesheet" href="vendor/styles/modules.css"/>
 
-  <!-- TODO: Link in the provided styles/icons.css file so that you can use icon fonts -->
+  <!-- TODO(COMPLETED): Link in the provided styles/icons.css file so that you can use icon fonts -->
 
-  <!-- TODO: Link in your SMACSS-appropriate CSS files: base, layout, and modules -->
+  <!-- TODO(COMPLETED): Link in your SMACSS-appropriate CSS files: base, layout, and modules -->
 
-  <!-- COMMENT: Explain the ordering of the loading of the stylesheets -->
-  <!-- PUT YOUR RESPONSE HERE -->
+  <!-- COMMENT: Explain the ordering of the loading of the stylesheets-->
+  <!-- We load normalize first to reset so everything is getting loaded from the same base template. We then load icons.css so that the icons will be available to the subsequent css files that will be using them. As we did in the exercise on day 1, we then load base.css which contains overall styling of the body and main elements. Next comes layout.css which applies to general positioning on the page (eg., header, footer, aside, etc.). Finally, we load modules.css which deals with more page-specific content styling. -->
 
   <!-- REVIEW: This is the favicon -->
   <link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/18607604?v=3&s=200">
