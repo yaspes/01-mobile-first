@@ -3,7 +3,11 @@
   font-family: sans-serif;
   margin: 0 auto;
   padding:15px;
-  padding-bottom:50px;
+  /* padding-bottom:50px; */
+}
+
+.clearfix {
+  overflow: hidden;
 }
 
 h1 {
