@@ -1,13 +1,16 @@
 .site-header {
-  background-color: #FFEAA9;
+  background-color: rgba(255,255,255,0);
   font-family: sans-serif;
   margin: 0 auto;
-  padding:15px;
-  /* padding-bottom:50px; */
+  overflow:auto;
 }
 
-.clearfix {
-  overflow: hidden;
+.site-header > * {
+  background-color: #FFEAA9;
+}
+
+.heading-group-h1 {
+  padding:15px;
 }
 
 h1 {
@@ -27,7 +30,7 @@ h2 {
 
 .main-nav {
   position: absolute;
-  /* display:block; */
+  width:100%;
 }
 
 .icon-menu{
@@ -36,23 +39,69 @@ h2 {
   top: 0px;
   font-size: 3em;
   text-decoration: none;
+  color:black;
+  
+}
+
+.icon-menu:hover + ul {
+  display:block;
 }
 
 .main-nav ul {
-  /*position: relative;*/
-  margin-left: 15px;
+  width:100%;
+  display:none;
+  background-color: #FFEAA9;
 }
 
-
-
 .main-nav ul li {
-  float:left;
   color: gray;
+  padding: 6px;
+  border-bottom: 2px solid rgb(202, 202, 202);
+  width:100%;
+  padding-bottom:14px;
 }
 
 .main-nav ul li a {
   color: gray;
   text-decoration: none;
   font-size: 1.5em;
+  
   padding-left:7px;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+@media screen and (min-width:640px) {
+  .main-nav {
+    position: relative;
+    width: 100%;
+  }
+  
+  .icon-menu{
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    font-size: 3em;
+    text-decoration: none;
+    color:black;
+    display:none;
+  }
+  
+  .main-nav ul {
+    background-color: #FFEAA9;
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .main-nav ul li {
+    float: left;
+    width: auto;
+    color: gray;
+    padding: 6px;
+    padding-bottom:14px;
+    border: none;
+  }
 }
